@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main (){
-    for (int i = 100; i<111; i++){
+    for (int i = 101; i<111; i++){
         printf ("%d,\t", i);
     }
 }
