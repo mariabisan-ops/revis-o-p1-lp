@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (){
+    float n1, n2;
+    printf ("digite o primeiro valor:\n");
+    scanf ("%f", &n1);
+    do (n2==0){
+        printf ("Digite o segundo valor:\n");
+        scanf ("%f", &n2);
+        if (n2==0){
+            printf ("Valor inválido.\nDigite novamente:\n")
+        }
+    } while (n2==0);
+    printf ("resultado final: %.2f", n1/n2);
+}
