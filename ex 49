@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+    float n1, n2, media;
+    char op = 's';
+    while (op=='s'|| op=='S'){
+        printf ("digite a nota da primeira avaliação:\n");
+        scanf ("%f", &n1);
+        while (n1<0 || n1>10){
+            printf ("Valor invalido.\nDigite novamente:\n");
+            scanf ("%f", &n1);
+        }
+        printf ("digite a nota da segunda avaliação:\n");
+        scanf ("%f", &n2);
+        while (n2<0 || n2>10){
+            printf ("Valor invalido.\nDigite novamente:\n");
+            scanf ("%f", &n2);
+        }
+        media = (n1+n2)/2;
+        printf ("media do aluno: %.2f", media);
+        printf ("Deseja fazer um novo cálculo? (s/n)\n");
+        scanf ( " %c", &op);
+        while (op!='S' && op!='s' && op!='n' && op!='N'){
+            printf ("não recohecido\nDigite novamente");
+            scanf (" %c", &op);
+        }
+    }
+}
