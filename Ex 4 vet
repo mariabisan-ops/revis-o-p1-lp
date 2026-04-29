@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (){
+    int v[8], x, y, soma;
+    for (int i=0; i<8; i++){
+        printf ("digite um valor:");
+        scanf ("%d", &v[i]);
+    }
+    printf ("digite a primeira posicao (de 0 a 7):");
+    scanf ("%d", &x);
+    printf ("\ndigite a segunda posicao ( de 0 a 7):");
+    scanf ("%d", &y);
+    soma = v[x] + v[y];
+    
+    printf ("\na soma dos valores nas posicoes %d e %d é %d", x, y, soma);
+}
