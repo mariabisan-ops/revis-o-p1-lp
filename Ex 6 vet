@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main (){
+    int v[10], maior, menor;
+    for (int i=0; i<10; i++){
+        printf ("digite um valor:");
+        scanf ("%d", &v[i]);
+    }
+    menor = v[0];
+    maior = v[0];
+    for (int i=0; i<10; i++){
+        if (v[i] > maior){
+           maior = v[i];
+        }
+        if (v[i] < menor){
+           menor = v[i];
+        }
+    }
+    printf (" o menor valor é: %d", menor);
+    printf ("\no maior valor é: %d", maior);
+}
