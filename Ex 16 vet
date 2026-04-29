@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+int main (){
+    float v[5];
+    int codigo;
+    for (int i=0; i<5; i++){
+        printf ("digite um valor: ");
+        scanf ("%f", &v[i]);
+    }
+    printf ("digite o codigo.\n1- ordem direta.\n2- ordem inversa\n");
+    scanf ("%d", &codigo);
+    while (codigo!=0 && codigo!=1 && codigo!=2){
+        printf ("valor invalido.\nDigite novamente");
+        scanf ("%d", &codigo);
+    }
+    if (codigo == 0){
+        return 0;
+    }
+    if (codigo == 1){
+       for (int i= 0; i<5; i++){
+            printf ("\n%f", v[i]);
+       }
+    }
+    if (codigo == 2){
+       for (int i = 4; i>=0; i--){
+           printf ("\n%f", v[i]);
+       }
+    }
+}
