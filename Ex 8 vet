@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main (){
+    int v[6];
+    for (int i=0; i<6; i ++){
+        printf ("digite um valor:");
+        scanf ("%d", &v[i]);
+    }
+    printf ("valores em ordem inversa:");
+    for (int i=5; i>=0; i--){
+        printf ("\n%d", v[i]);
+    }
+}
