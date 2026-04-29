@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main (){
+  int m[3][3], t[3][3];
+  for (int i=0; i<3; i++){
+    for (int j =0; j<3; j++){
+      printf ("digite um valor: ");
+      scanf ("%d", &m[i][j]);
+    }
+  }
+
+  for(int i=0; i<3; i++){
+    for (int j=0; j<3; j++){
+      t[i][j] = m[j][i];
+    }
+  }
+  printf ("matriz transposta:\n");
+  for (int i=0; i<3; i++){
+    for (int j=0; j<3; j++){
+      printf ("%d\t", t[i][j]);
+    }
+    printf ("\n");
+  }
+}
