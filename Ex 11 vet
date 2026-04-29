@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (){
+    float v[10], neg =0, pos=0;
+    for (int i=0; i<10; i++){
+        printf ("digite um valor:");
+        scanf ("%d", &v[i]);
+    }
+    for (int i=0; i<10; i++){
+        if (v[i]<0){
+            neg ++;
+        }
+        if (v[i] > 0){
+            pos = pos + v[i];
+        }
+    }
+    printf ("quantidade de numeros negativos: %f", neg);
+    printf("\nsoma dos numeros positivos: %f", pos);
+}
