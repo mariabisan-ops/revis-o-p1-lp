@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main (){
+    float v[5], menor, maior, soma=0, media;
+    for (int i=0; i<5; i++){
+        printf ("digite um valor:");
+        scanf ("%f", &v[i]);
+        soma = soma + v[i];
+    }
+    menor = v[0];
+    maior = v[0];
+    media = soma/5;
+    for (int i=0; i<5; i++){
+        if (v[i] < menor){
+           menor = v[i];
+        }
+        if (v[i]>maior){
+           maior = v[i];
+        }
+    }
+    printf ("valores do vetor:");
+    for (int i=0; i<5; i++){
+        printf ("\t%f", v[i]);
+    }
+    printf ("menor valor: %f", menor);
+    printf ("maior valor: %f", maior);
+    printf ("media: %.2f", media);
+}
