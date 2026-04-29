@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (){
+    float v[10], q[10];
+    for (int i =0; i<10; i++){
+        printf ("digite um valor:");
+        scanf ("%f", &v[i]);
+    }
+    for (int i=0; i<10; i++){
+        q[i] = v[i] * v[i];
+    }
+    printf ("o vetor q[i] é:");
+    for (int i=0; i<10; i++){
+        printf ("\n%f", q[i]);
+    }
+}
