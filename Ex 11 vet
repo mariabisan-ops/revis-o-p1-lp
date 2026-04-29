@@ -4,7 +4,7 @@ int main (){
     float v[10], neg =0, pos=0;
     for (int i=0; i<10; i++){
         printf ("digite um valor:");
-        scanf ("%d", &v[i]);
+        scanf ("%f", &v[i]);
     }
     for (int i=0; i<10; i++){
         if (v[i]<0){
