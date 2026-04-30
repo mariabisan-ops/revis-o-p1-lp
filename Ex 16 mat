@@ -1,0 +1,41 @@
+#include <stdio.h>
+
+int main (){
+  char r[3][10], g[10];
+  int m[3], p[3] = {0,0,0};
+  float ap =0, pc;
+  for (int i=0; i<3; i++){
+    for (int j=0; j<10; j++){
+      printf ("digite a resposta do aluno: ");
+      scanf (" %c", &r[i][j]);
+    }
+  }
+  for (int i=0; i<10; i++){
+    printf ("digite o gabarito: ");
+    scanf (" %c", &g[i]);
+  }
+  for (int i=0; i<3; i++){
+    printf ("digite a matricula: ");
+    scanf ("%d", &m[i]);
+  }
+  for (int i=0; i<3; i++){
+    for (int j=0; j<10; j++){
+      if (r[i][j] == g[j]){
+        p[i]++;
+      }
+    }
+    if (p[i] >=7){
+      ap ++;
+    }
+  }
+  for (int i=0; i<3; i++){
+    printf ("matricula: %d\n", m[i]);
+    printf ("pontuacao: %d\n", p[i]);
+    for (int j=0; j<10; j++){
+      printf ("respostas: %c\t", r[i][j]);
+    }
+    printf ("\n");
+  }
+  pc = (ap/3)*100;
+  printf ("percentual de aprovacao: %.2f ", pc);
+}
