@@ -1,0 +1,28 @@
+#include <stdio.h>
+
+int main(){
+  int v[10], imp[10];
+  int cont=0;
+  for (int i=0; i<10; i++){
+    printf ("digite um valor: ");
+    scanf ("%d", &v[i]);
+    while(v[i]<0 || v[i]>50){
+      printf ("valor invalido\nDigite novamente:");
+      scanf ("%d", &v[i]");
+    }
+  }
+  for (int i=0; i<10; i++){
+    if (v[i]%2==1){
+      imp[cont] = v[i];  
+      cont++;
+    }
+  }
+  printf ("vetor:\n);
+  for (int i=0; i<10; i++){
+    printf ("%d\t", v[i]);
+  }
+  printf ("vetor impar:\n");
+  for (int i=0; i<cont; i++){
+    printf ("%d\t", imp[i]);
+  }
+}
