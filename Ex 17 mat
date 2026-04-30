@@ -1,0 +1,30 @@
+#include <stdio.h>
+
+int main (){
+  float n[10][3];
+  int soma1=0, soma2=0, soma3=0;
+
+  for (int i=0; i<10; i++){
+    for (int j=0; j<3; j++){
+      printf ("digite a nota: ");
+      scanf ("%f", &n[i][j]);
+    }
+  }
+
+  for (int i=0; i<10; i++){
+    for (int j=0; j<3; j++){
+      if (n[i][0] <= n[i][1] && n[i][0] <= n[i][2]){
+        soma1++;
+      }
+      if (n[i][1] <= n[i][0] && n[i][1] <= n[i][2]){
+        soma2++;
+      }
+      if (n[i][2] <= n[i][0] && n[i][2] <= n[i][1]){
+        soma3++;
+      }
+    }
+  }
+  printf ("alunos com pior nota na p1:%d\n", soma1);
+  printf ("alunos com pior nota na p2:%d\n", soma2);
+  printf ("alunos com pior notabna p3:%d\n", soma3);
+}
